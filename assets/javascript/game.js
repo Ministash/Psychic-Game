@@ -15,7 +15,7 @@ return returnLetters
 }
 
 var computerChoice = computerChoiceFuncion();
-console.log(computerChoice);
+console.log("This is the letter you neec to guess ======>  " + computerChoice);
 
 
 document.addEventListener('keypress', function(event){
@@ -33,7 +33,7 @@ function compare(userChoice, computerChoice){
         guesses = 10;
         userChoiceArray = [];
         computerChoice = computerChoiceFuncion();
-        console.log(computerChoice);
+        console.log("This is the letter you neec to guess ======>  " + computerChoice);
     }
     else if((guesses === -1) || (userChoiceArray.length === 11)){
         yourLoses++;
@@ -41,7 +41,7 @@ function compare(userChoice, computerChoice){
         guesses = 10;
         userChoiceArray = [];
         computerChoice = computerChoiceFuncion();
-        console.log(computerChoice);
+        console.log("This is the letter you neec to guess ======>  " + computerChoice);
         
     }
     else if(userChoice != computerChoice){
