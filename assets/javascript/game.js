@@ -5,7 +5,6 @@ var userChoiceArray = [];
 const winning = document.getElementById("winning");
 const guessesLeft = document.getElementById("guessNumber");
 const youLost = document.getElementById("superLoser");
-var computerChoice = "a";
 
 
 function computerChoiceFuncion(){
@@ -23,22 +22,22 @@ document.addEventListener('keypress', function(event){
     var userChoice = event.key;
     userChoiceArray.push(userChoice + " ");
     compare(userChoice, computerChoice);
-    shownGuess.innerHTML = "Your Guess So Far: " + userChoiceArray;
+    shownGuess.innerHTML = userChoiceArray;
 })
 
 
 function compare(userChoice, computerChoice){
     if (userChoice === computerChoice) {
         yourWins++;
-        winning.innerHTML = "Wins: " + yourWins;
+        winning.innerHTML = yourWins;
         guesses = 10;
         userChoiceArray = [];
         computerChoice = computerChoiceFuncion();
         console.log(computerChoice);
     }
-    else if((guesses === 0) || (userChoiceArray.length === 10)){
+    else if((guesses === -1) || (userChoiceArray.length === 11)){
         yourLoses++;
-        youLost.innerHTML = "Losses: " + yourLoses;
+        youLost.innerHTML = yourLoses;
         guesses = 10;
         userChoiceArray = [];
         computerChoice = computerChoiceFuncion();

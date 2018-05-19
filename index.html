@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Guessing Game</title>
-    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
 
-  </head>
-  <body>
+<head>
+        <meta charset="UTF-8">
+        <title>Guessing Game</title>
+        <link rel="stylesheet" type="text/css" href="assets\css\style.css">
 
-<h1 id="nav" >The Psychic Game!</h1>
+</head>
 
-<p id="headerText">Guess What Letter I'm Thinking Of</p>
-<div class="img">
-<img src="assets\images\thinking.png" style="width: 200px; height: 200px;" >
-</div>
-<div class="wrapper">
-<p id="winning">Wins:</p>
-<p id="superLoser">Losses:</p>
-<p id="guessNumber">Guesses Left: 10</p>
-<p id="shownGuess">Your Guess So Far:</p>
-</div>
+<body>
+
+        <h1 id="nav">The Psychic Game!</h1>
+
+        <p id="headerText">Guess What Letter I'm Thinking Of</p>
+        <div id="img-wrapper">
+                <div class="img">
+                        <img src="assets\images\thinking.png" style="width: 200px; height: 200px;">
+                </div>
+        </div>
+        <div class="wrapper">
+                <p id="wins"> Wins </p>
+                <p id="losses">Losses</p>
+                <span id="winning">0</span>:
+                <span id="superLoser">0</span>
+        </div>
+
+        <div class="wrapper_two">
+                <p id="start">Start typing to guess!</p>
+                <p id="soFar"> Your Guess So Far:</p>
+                <p id="shownGuess"></p>
+        </div>
+
+        <p id="guessNumber">Guesses Left: 10</p>
 
 
 
-<script type="text/javascript" src="assets\javascript\game.js"></script>    
-  </body>
+        <script type="text/javascript" src="assets\javascript\game.js"></script>
+</body>
+
 </html>
