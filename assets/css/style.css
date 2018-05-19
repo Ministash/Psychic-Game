@@ -13,8 +13,6 @@ body{
     height: 200px;
     text-align: center;
     border-bottom: solid white 3px;
-   
-
 }
 
 #start{
@@ -53,6 +51,12 @@ body{
     line-height: 100px;
     color: rgb(48, 47, 83);
     font-size: 50px;
+    transition: background-color 1s, color 8s ease;
+}
+
+#nav:hover{
+    background: rgb(48, 47, 83);
+    color: white;
 }
 
 .wrapper {
